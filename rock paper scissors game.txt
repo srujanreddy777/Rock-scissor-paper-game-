@@ -1,0 +1,43 @@
+import random
+while True:
+    user= ['paper','rock','scissors']
+    computer=random.choice(user)
+    player=None
+    while player not in user:
+      player=input('choose rock or paper or scissors:?').lower()
+    if (player==computer):
+       print('player:', player)
+       print("computer:", computer)
+       print('match Tie:|')
+    elif computer=="paper":
+       if(player== "rock"):
+         print('player:', player)
+         print("computer:", computer)
+         print('you won!')
+       else:
+           print('player:', player)
+           print("computer:", computer)
+           print('you loose!')
+    elif computer=="rock":
+       if(player== "paper"):
+          print('player:', player)
+          print("computer:", computer)
+          print('you won!')
+       else:
+           print('player:', player)
+           print("computer:", computer)
+           print('you loose!')
+    else :
+         computer=="scissors"
+         if(player=="rock"):
+            print('player:', player)
+            print("computer:", computer)
+            print('you won!')
+         else:
+            print('player:', player)
+            print("computer:", computer)
+            print('you loose!')
+
+    play_again=input('do you want to contine(yes/no)').lower()
+    if play_again != "yes":
+      break
